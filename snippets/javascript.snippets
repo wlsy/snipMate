@@ -2,9 +2,8 @@
 snippet ///
 	/**
 	 * ${1}
-	 * @author xiaoming,zhuang wlsy <i@wlsy.me zhuangxiaoming@baidu.com>
+	 * @author wlsy <i@wlsy.me>
 	 * @link 
-	 * @version: 1.0
 	 * @license GPL
 	 */
 
@@ -27,9 +26,8 @@ snippet fun
 	}
 # Anonymous Function
 snippet f
-	function(${1}) {
-		${2}
-		};
+	function(${1}) { ${2}
+	}${3:;}
 # if
 snippet if
 	if (${1:true}) {${2}};
@@ -93,3 +91,5 @@ snippet gett
 # debug
 snippet bug
 	console.${1:log}('${2}')
+snippet r
+	require('${1}')
